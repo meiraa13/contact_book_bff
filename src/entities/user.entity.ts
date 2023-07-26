@@ -20,8 +20,8 @@ class User {
     @Column({type:'varchar', length: 120})
     password:string
 
-    @Column({type:'integer'})
-    phoneNumber:number
+    @Column({type:'varchar', length: 11})
+    phoneNumber:string
 
     @CreateDateColumn({type:'date'})
     createdAt: string | Date

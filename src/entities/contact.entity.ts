@@ -12,8 +12,8 @@ class Contact {
     @Column({type:'varchar', length:45})
     email:string
 
-    @Column({type:'integer'})
-    phoneNumber:number
+    @Column({type:'varchar'})
+    phoneNumber:string
 
     @CreateDateColumn({type:'date'})
     createdAt: string | Date
