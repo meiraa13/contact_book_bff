@@ -35,3 +35,26 @@ SECRET_KEY= string
 ```
 npm run dev
 ```
+## Endpoints
+<br/>
+
+| Método | Endpoint                   | Responsabilidade                                  | Autenticação                           |
+| ------ | -------------------------- | ------------------------------------------------- | -------------------------------------- |
+| GET | /users/:id                    | buscar usuário por id                             | somente dono da conta 
+| POST| /users                        | cadastrar um usuário                              | qualquer usuário
+|PATCH| /users/:id/                   | atualizar informações do usuário                  | somente dono da conta
+|DELETE|/users/:id/                   | excluir usuário                                   | somente dono da conta
+
+<br/>
+| Método | Endpoint                   | Responsabilidade                                  | Autenticação                           |
+| ------ | -------------------------- | ------------------------------------------------- | -------------------------------------- |
+| POST   | /login                     | iniciar sessão                                    | somente usuário ja criado no banco 
+
+<br/>
+| Método | Endpoint                   | Responsabilidade                                  | Autenticação                           |
+| ------ | -------------------------- | ------------------------------------------------- | -------------------------------------- |
+| GET | /contacts                     | buscar todos contatos do usuário determinado      | somente dono da conta 
+| POST| /contacts                     | cadastrar um contato para usuário determinado     | somente dono da conta
+|PATCH| /contacts/:id/                | atualizar informações do contato                  | somente dono da conta
+|DELETE|/contacts/:id/                | excluir contato                                   | somente dono da conta
+
