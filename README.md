@@ -46,11 +46,13 @@ npm run dev
 |DELETE|/users/:id/                   | excluir usuário                                   | somente dono da conta
 
 <br/>
+
 | Método | Endpoint                   | Responsabilidade                                  | Autenticação                           |
 | ------ | -------------------------- | ------------------------------------------------- | -------------------------------------- |
 | POST   | /login                     | iniciar sessão                                    | somente usuário ja criado no banco 
 
 <br/>
+
 | Método | Endpoint                   | Responsabilidade                                  | Autenticação                           |
 | ------ | -------------------------- | ------------------------------------------------- | -------------------------------------- |
 | GET | /contacts                     | buscar todos contatos do usuário determinado      | somente dono da conta 
