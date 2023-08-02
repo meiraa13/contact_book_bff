@@ -22,12 +22,18 @@ Siga os passos abaixo para poder rodar a aplicação no seu servidor local:
 npm install
 ```
 
-4. Crie um arquivo chamado `.env` na raiz do projeto, fora da pasta src e defina as variaveis de ambiente para se conectar ao seu banco de dados e sua chave secreta. 
+3. Crie um arquivo chamado `.env` na raiz do projeto, fora da pasta src e defina as variaveis de ambiente para se conectar ao seu banco de dados e sua chave secreta. 
 certifique-se de ter criado anteriormente o banco de dados que vai ser utilizado.
 
 ```
 DATABASE_URL= postgres://user:password@host:port/db
 SECRET_KEY= string
+```
+
+4. Agora execute o comando abaixo para rodar as migrações necessárias do projeto:
+
+```
+npm run typeorm migration:run -- -d ./src/data-source
 ```
 
 5. Rode o comando abaixo para iniciar o servidor:
